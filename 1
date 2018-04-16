@@ -1,0 +1,27 @@
+#!/bin/bash
+# Filename:       1.sh
+# Author:         Coral,Daniel  (ism47597075)
+# Date:            10/4/2018
+# Version:        0.1
+# License:        This is free software, licensed under the GNU General Public License v3.
+#                      See http://www.gnu.org/licenses/gpl.html for more information.
+# Usage:         . 1.sh
+
+# Description:exercici de sistemes operatius
+
+if [[ $1 =~ ^[a-zA-Z] ]]
+then
+	echo "es una lletra"
+
+elif [[ $1 =~ ^[0-9] ]]
+then
+	echo "es un numero"
+
+
+if [ $# -ne 1 ]
+then
+	echo "error numero de arguments incorrectes"
+else 
+	echo "qualsevol caracter"
+fi
+exit 0
